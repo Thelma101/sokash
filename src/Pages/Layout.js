@@ -61,10 +61,12 @@ return(
      >
     <Navs />
      </Nav>
+
+    
      <Content className="content">
-        { checkIfTokenExist ?  ""
-         :  history.push("/")
-        }
+
+        { checkIfTokenExist ?"": history.push("/")}
+
         <Route exact path={`${props.match.path}/`} component={Dashboard}/>
         <Route exact path={`${props.match.path}/bvn`} component={Bvn}/>
         {/* <Route exact path={`loans-pending-approval`} component={LoanPendingApproval}/> */}

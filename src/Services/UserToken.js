@@ -1,18 +1,20 @@
 // the script contains functions that manage access token for API calls
 
 function setToken(value) {
-  sessionStorage.setItem("BB360accessToken", value);
+  sessionStorage.setItem("SokashAdminaccessToken", value);
 }
 
 function getToken() {
-  return sessionStorage.getItem("BB360accessToken");
+  return sessionStorage.getItem("SokashAdminaccessToken");
 }
 
 function checkIfTokenExist() {
-  if (sessionStorage.getItem("BB360accessToken") === null) {
-    return false;
+  //if (sessionStorage.getItem("SokashAdminaccessToken") === null) {
+    if(localStorage.hasOwnProperty("SokashAdminaccessToken")){
+    return true;
   }
-  return true;
+  
+  return false;
 }
 
 function clearToken() {
@@ -20,11 +22,11 @@ function clearToken() {
 }
 
 function setUserDetails(user) {
-  sessionStorage.setItem("bb360user", JSON.stringify(user));
+  sessionStorage.setItem("SokashAdminuser", JSON.stringify(user));
 }
 
 function getUserDetails() {
-  return JSON.parse(sessionStorage.getItem("bb360user"));
+  return JSON.parse(sessionStorage.getItem("SokashAdminuser"));
 }
 
 function setAdminAnalysis(analysis) {
