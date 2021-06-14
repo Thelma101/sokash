@@ -1,0 +1,30 @@
+.inputStyle {
+  width: 3rem !important;
+  height: 3rem;
+  margin: 0 1rem;
+  font-size: 2rem;
+  border-radius: 4px;
+  border: 1px solid green;
+}
+.inputStyle:focus {
+  border: 1px solid greenyellow;
+}
+
+.error {
+  border: 1px solid red !important;
+}
+
+.buttontoken {
+  background: #007945 !important;
+  box-shadow: 0px 0px 15px #dae5f0 !important;
+  border-radius: 50px !important;
+  color: white !important;
+  margin-left: 5% !important;
+}
+.buttontokenreset {
+    background:red !important;
+    box-shadow: 0px 0px 15px #dae5f0 !important;
+    border-radius: 50px !important;
+    color: white !important;
+    margin-left: 5% !important;
+  }
