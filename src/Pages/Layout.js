@@ -33,6 +33,7 @@ import LoanProduct from './LoanProduct';
 import Roles from "./Roles";
 import LoanReject from "./LoanReject";
 import Settings from './Settings';
+import Bvn from './Bvn';
 import {checkIfTokenExist} from "../Services/UserToken";
 
 const baseTheme = createMuiTheme(); 
@@ -65,6 +66,8 @@ return(
          :  history.push("/")
         }
         <Route exact path={`${props.match.path}/`} component={Dashboard}/>
+        <Route exact path={`${props.match.path}/bvn`} component={Bvn}/>
+        {/* <Route exact path={`loans-pending-approval`} component={LoanPendingApproval}/> */}
         <Route exact path={`${props.match.path}/borrower-list`} component={BorrowerList}/>
         <Route exact path={`${props.match.path}/loans-pending-approval`} component={LoanPendingApproval}/>
         <Route exact path={`${props.match.path}/loan-missed`} component={LoanMissed} />

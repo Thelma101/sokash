@@ -129,6 +129,19 @@ export default function SelectedListItem() {
           </ListItemIcon>
           <ListItemText primary="Loan Product" />
         </ListItem>
+
+        <ListItem
+          component={Link} to="/dashboard/bvn"
+          button
+          selected={selectedIndex === 31}
+          onClick={(event) => handleListItemClick(event, 31)}
+        >
+          <ListItemIcon>
+            <HomeOutlinedIcon />
+          </ListItemIcon>
+          <ListItemText primary="BVN Manual Verification" />
+        </ListItem>
+
         <ListItem
           component={Link} to="/dashboard/loan-reject"
           button
